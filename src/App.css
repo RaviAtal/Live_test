@@ -1,38 +1,128 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* @font-face {
+  font-family: "";
+  src: url("./Assets/fonts/Helvetica.ttf");
+  font-weight: normal;
+} */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style-type: none !important;
+  box-sizing: border-box !important;
+}
+.ff_roboto {
+  font-family: "Roboto", sans-serif;
+}
+.ff_helvetica {
+  font-family: "Helvetica";
+}
+:root {
+  /* -----FONT SIZE---- */
+  --fs-i: 11px;
+  --fs-ii: 12px;
+  --fs-iii: 15px;
+  --fs-iv: 16px;
+  --fs-v: 17px;
+  --fs-vi: 18px;
+  --fs-vii: 19px;
+  --fs-viii: 20px;
+  --fs-ix: 21px;
+  --fs-x: 25px;
+  --fs-xi: 26px;
+  --fs-xii: 28px;
+  --fs-xiii: 32px;
+  --fs-xiv: 35px;
+  --fs-xv: 36px;
+  --fs-xvi: 37px;
+  --fs-xvii: 38px;
+  --fs-xviii: 39px;
+  --fs-xix: 40px;
+  --fs-xx: 42px;
+  --fs-xxi: 68px;
+  --fs-xxii: 70px;
+  --fs-xxiii: 94px;
+  --fs-xxiv: 101px;
+  --fs-xxv: 106px;
+  --fs-xxvi: 110px;
+}
+/* -------FONT SIZE------- */
+.fs_i {
+  font-size: var(--fs-i) !important;
+}
+.fs_ii {
+  font-size: var(--fs-ii) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fs_iii {
+  font-size: var(--fs-iii) !important;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs_iv {
+  font-size: var(--fs-iv) !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fs_v {
+  font-size: var(--fs-v) !important;
 }
-
-.App-link {
-  color: #61dafb;
+.fs_vi {
+  font-size: var(--fs-vi) !important;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.fs_vii {
+  font-size: var(--fs-vii) !important;
+}
+.fs_viii {
+  font-size: var(--fs-viii) !important;
+}
+.fs_ix {
+  font-size: var(--fs-ix) !important;
+}
+.fs_x {
+  font-size: var(--fs-x) !important;
+}
+.fs_xi {
+  font-size: var(--fs-xi) !important;
+}
+.fs_xii {
+  font-size: var(--fs-xii) !important;
+}
+.fs_xiii {
+  font-size: var(--fs-xiii) !important;
+}
+.fs_xiv {
+  font-size: var(--fs-xiv) !important;
+}
+.fs_xv {
+  font-size: var(--fs-xv) !important;
+}
+.fs_xvi {
+  font-size: var(--fs-xvi) !important;
+}
+.fs_xvii {
+  font-size: var(--fs-xvii) !important;
+}
+.fs_xviii {
+  font-size: var(--fs-xviii) !important;
+}
+.fs_xix {
+  font-size: var(--fs-xix) !important;
+}
+.fs_xx {
+  font-size: var(--fs-xx) !important;
+}
+.fs_xxi {
+  font-size: var(--fs-xxi) !important;
+}
+.fs_xxii {
+  font-size: var(--fs-xxii) !important;
+}
+.fs_xxiii {
+  font-size: var(--fs-xxiii) !important;
+}
+.fs_xxiv {
+  font-size: var(--fs-xxiv) !important;
+}
+.fs_xxv {
+  font-size: var(--fs-xxv) !important;
+}
+.fs_xxvi {
+  font-size: var(--fs-xxvi) !important;
 }
