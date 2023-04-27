@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <>
       <footer className="bg_footer position-relative">
-        <section className="mx-3">
+        <section className="mx-3 mb-2">
           <div className="container_cus py-5 ">
             <div className="row justify-content-between">
               <div className="col-lg-7 mt-3 mt-lg-0">
