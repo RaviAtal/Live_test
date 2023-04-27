@@ -18,8 +18,7 @@ const Header = () => {
               {/* imgggg*/}
               <div className="col-md-6 position-relative">
                 <div className="h-100">
-                  {/* box_1 left_car*/}
-                  <div className=" position-absolute t_110r_65per box_Contacted p-3">
+                  <div className=" position-absolute t_110r_65per box_Contacted box_shado_md_lg p-3">
                     <div className="d-flex">
                       <h6 className="m-0 ff_Segoe fs_14 fw-semibold">
                         Jordan Wentworth
@@ -41,8 +40,7 @@ const Header = () => {
                       </p>
                     </div>
                   </div>
-                  {/* box_2 Mihail Lacusta */}
-                  <div className=" position-absolute t_40_l65per box_Contacted_2 p-3">
+                  <div className=" position-absolute t_40_l65per box_Contacted_2 p-3 ">
                     <div className="d-flex justify-content-end align-items-center gap-1">
                       <svg
                         width="13"
@@ -74,7 +72,6 @@ const Header = () => {
                       </p>
                     </div>
                   </div>
-                  {/* box_3 Active  */}
                   <div className=" position-absolute t_434_r_80per box_Active_3">
                     <div className="d-flex align-items-center justify-content-between">
                       <p className="m-0 fs_8 ff_Segoe fw-semibold ms-1">
@@ -95,7 +92,6 @@ const Header = () => {
                       </svg>
                     </div>
                   </div>
-                  {/* box_4 */}
                   <div className=" position-absolute t_20r_28per z_index_2">
                     <div className=" w_163px position-relative">
                       <img
@@ -118,8 +114,7 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  {/* box_5 */}
-                  <div className=" position-absolute posss">
+                  <div className=" position-absolute t_171_r_187">
                     <div className="bg-white cierathonas_widdth px-3 py-3 rounded-3">
                       <div className="d-flex justify-content-between border_ccc">
                         <div className="d-flex align-items-start">
@@ -197,9 +192,8 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  {/* box_6 */}
-                  <div className=" position-absolute positio">
-                    <div className="bg-white aveen_div ">
+                  <div className=" position-absolute t_256_r_167">
+                    <div className="bg-white aveen_div">
                       <div className="p-2">
                         <p className=" ff_Segoe fw-normal fs_8 mb-1">
                           5500 72nd Ave N
@@ -237,8 +231,7 @@ const Header = () => {
                   {/* blue_circle */}
                   <div className="blue_circle position-absolute"></div>
                   {/* light_brown_circle */}
-                  <div className="light_brown_circle position-absolute"></div>
-                  {/* text_part */}
+                  <div className="light_brown_circle position-absolute t_0r_100"></div>
                   <div className="row align-content-end z_index_2 pt_448">
                     <div className="col-4">
                       <div className="h-100">
@@ -255,7 +248,7 @@ const Header = () => {
                         <h3 className="fs_24 m-0 ff_Segoe fw-semibold text-center">
                           $3Tn
                         </h3>
-                        <p className="m-0 pt-4 text-center fs_16 ff_Segoe fw-normal">
+                        <p className="m-0 pt-3 pt-sm-4 text-center fs_16 ff_Segoe fw-normal">
                           Investable assets predicted per year
                         </p>
                       </div>
@@ -265,7 +258,7 @@ const Header = () => {
                         <h3 className="fs_24 m-0 ff_Segoe fw-semibold text-center">
                           $77Bn
                         </h3>
-                        <p className="m-0 pt-4 text-center fs_16 ff_Segoe fw-normal col-10">
+                        <p className="m-0 pt-3 pt-sm-4 text-center fs_16 ff_Segoe fw-normal col-10">
                           Predicted home value transacted per year
                         </p>
                       </div>
@@ -279,7 +272,7 @@ const Header = () => {
                   <h1 className=" ff_Segoe fw-semibold fs_55 m-0">
                     Grow your business with Event-Driven Predictive Analytics
                   </h1>
-                  <p className=" m-0 ff_Segoe fw-normal fs_16 opacity-75 pt_15 col-11 pr_7">
+                  <p className=" m-0 ff_Segoe fw-normal fs_16 opacity-75 pt_15 col-sm-10 pr_6">
                     It is a long established fact that a reader will be
                     distracted by the using Lorem Ipsum is that it has a
                     more-or-less normal distribution of letters, as opposed to
@@ -288,14 +281,14 @@ const Header = () => {
                   </p>
                   <div className="d-flex col-lg-11 pr_7 mt-5">
                     <div className="col-6 bg_green rounded-1">
-                      <div className="p-3 p-md-4 p-lg-5">
+                      <div className="p-3 p-md-4 p-xl-5">
                         <p className=" ff_Segoe fs_16 fw-semibold text-white opacity-75 m-0">
                           boost your
                         </p>
-                        <h6 className="ff_segoe fw-semibold fs_24 m-0 col-11 text-white pb-4">
+                        <h6 className="ff_segoe fw-semibold fs_24 m-0 col-lg-11 text-white ">
                           Financial Services
                         </h6>
-                        <div className="d-flex justify-content-between align-items-center">
+                        <div className="d-flex justify-content-between align-items-center mt_38">
                           <a
                             className=" ff_segoe fw-semibold fs_16 text-white"
                             href="#"
@@ -307,7 +300,7 @@ const Header = () => {
                       </div>
                     </div>
                     <div className="col-6 bg_blue rounded-1 ml_7">
-                      <div className="p-3 p-md-4 p-lg-5">
+                      <div className="p-3 p-md-4 p-xl-5">
                         <p className=" ff_Segoe fs_16 fw-semibold text-white opacity-75 m-0">
                           boost your
                         </p>
