@@ -5,7 +5,7 @@ import line_footer from "../assets/images/png/Line _footer_img.png";
 const Footer = () => {
   return (
     <>
-      <footer className="bg_footer">
+      <footer className="bg_footer position-relative">
         <section className="mx-3">
           <div className="container_cus py-5 ">
             <div className="row justify-content-between">
@@ -227,6 +227,7 @@ const Footer = () => {
             </div>
           </div>
         </section>
+        <div className="footer_white_circle position_set d-none d-lg-flex"></div>
       </footer>
     </>
   );

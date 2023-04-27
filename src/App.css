@@ -431,6 +431,17 @@
   bottom: 40%;
   left: 100%;
 }
+.footer_white_circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: #3861eb;
+  filter: blur(125px);
+}
+.position_set {
+  top: 90px;
+  right: 113px;
+}
 @media (min-width: 375px) {
   .mt_38 {
     margin-top: 52px !important;
