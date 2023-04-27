@@ -1,5 +1,6 @@
 import React from "react";
 import footer_logo from "../assets/images/png/footer_logo.png";
+import line_footer from "../assets/images/png/Line _footer_img.png";
 
 const Footer = () => {
   return (
@@ -95,8 +96,8 @@ const Footer = () => {
             </div>
           </div>
           <hr className="hr_footer" />
-          <div className="container_cus py-5 ">
-            <div className="row">
+          <div className="container_cus py-5 position-relative">
+            <div className="row ">
               <div className=" mt-3 my-lg-0 col-sm-6 col-lg-4">
                 <li>
                   <a href="#">
@@ -183,6 +184,13 @@ const Footer = () => {
                 </li>
               </div>
             </div>
+            <a href="#">
+              <img
+                className="position-absolute pos_line z_index_2 d-none d-lg-flex anim_line"
+                src={line_footer}
+                alt="line_footer"
+              />
+            </a>
             <div className="row mt-5">
               <div className="col-md-6 mt-3 mt-lg-0 col-lg-4">
                 <a

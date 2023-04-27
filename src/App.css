@@ -427,7 +427,10 @@
   gap: 10px;
   display: flex;
 }
-
+.pos_line {
+  bottom: 40%;
+  left: 100%;
+}
 @media (min-width: 375px) {
   .mt_38 {
     margin-top: 52px !important;
@@ -488,6 +491,18 @@
   @keyframes anim_rotat {
     50% {
       transform: translate(15px);
+    }
+  }
+  .anim_line {
+    animation: anim_lineee;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim_lineee {
+    50% {
+      transform: translateY(15px);
     }
   }
 }
