@@ -31,9 +31,9 @@ const Footer = () => {
                     />
                     {/* radio */}
                     <div className="d-flex mt-2">
-                      <div className="col-6 border_2_green py-2 radio_force">
+                      <div className=" text-nowrap col-6 border_2_green py-2 radio_force">
                         <input
-                          className=" bg_blue_light ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-2"
+                          className=" bg_blue_light ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-1"
                           id="Financial Services"
                           name="Financial Services"
                           // onChange={handleInput}
@@ -42,13 +42,13 @@ const Footer = () => {
                           value="Financial Services"
                         />
                         <label
-                          className="ms-2 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap"
+                          className="ms-1 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap"
                           for="Financial Services"
                         >
                           Financial Services
                         </label>
                       </div>
-                      <div className="col-6">
+                      <div className=" text-nowrap col-6">
                         <div className="border_2_green py-2 ms-2 text-center radio_force">
                           <input
                             className=" bg_blue_light ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-2"
