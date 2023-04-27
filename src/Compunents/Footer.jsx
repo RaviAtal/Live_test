@@ -183,6 +183,40 @@ const Footer = () => {
                 </li>
               </div>
             </div>
+            <div className="row mt-5">
+              <div className="col-md-6 mt-3 mt-lg-0 col-lg-4">
+                <a
+                  className=" ff_Segoe fw-normal fs_14 text-white opacity-75"
+                  href="#"
+                >
+                  All rights reserved.©20022 Catalyze AI
+                </a>
+              </div>
+              <div className="col-md-6 mt-3 mt-lg-0 col-lg-4">
+                <a
+                  className=" text-decoration-underline ff_Segoe fw-normal fs_14 text-white opacity-75"
+                  href="#"
+                >
+                  Do not sell my data
+                </a>
+              </div>
+              <div className="col-md-6 mt-3 mt-lg-0 col-lg-2">
+                <a
+                  className=" text-decoration-underline ff_Segoe fw-normal fs_14 text-white opacity-75"
+                  href="#"
+                >
+                  Terms & Conditions
+                </a>
+              </div>
+              <div className="col-md-6 mt-3 mt-lg-0 col-lg-2">
+                <a
+                  className=" text-decoration-underline ff_Segoe fw-normal fs_14 text-white opacity-75"
+                  href="#"
+                >
+                  Privacy Policy
+                </a>
+              </div>
+            </div>
           </div>
         </section>
       </footer>
