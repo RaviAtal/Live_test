@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="row justify-content-between">
               <div className="col-lg-7 mt-3 mt-lg-0">
                 <form className="row">
-                  <div className=" mt-3 mt-md-0 col-md-6">
+                  <div className=" mt-3 mt-md-0 col-6">
                     <input
                       className=" bg_blue_light w-100 ff_Segoe fw-semibold text-white opacity-75 border-0 py-2 px-2"
                       // id="MyName"
@@ -69,7 +69,7 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" mt-3 mt-md-0 col-md-6 ms-md-2">
+                  <div className=" mt-3 mt-md-0 col-6 ">
                     <textarea
                       placeholder="Message.."
                       cols="35"
