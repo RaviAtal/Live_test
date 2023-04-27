@@ -18,7 +18,7 @@ const Header = () => {
               {/* imgggg*/}
               <div className="col-md-6 position-relative">
                 <div className="h-100">
-                  <div className=" position-absolute t_110r_65per box_Contacted box_shado_md_lg p-3">
+                  <div className=" anim position-absolute t_110r_65per box_Contacted box_shado_md_lg p-3">
                     <div className="d-flex">
                       <h6 className="m-0 ff_Segoe fs_14 fw-semibold">
                         Jordan Wentworth
@@ -40,7 +40,7 @@ const Header = () => {
                       </p>
                     </div>
                   </div>
-                  <div className=" position-absolute t_40_l65per box_Contacted_2 p-3 ">
+                  <div className="anim position-absolute t_40_l65per box_Contacted_2 p-3 ">
                     <div className="d-flex justify-content-end align-items-center gap-1">
                       <svg
                         width="13"
@@ -72,7 +72,7 @@ const Header = () => {
                       </p>
                     </div>
                   </div>
-                  <div className=" position-absolute t_434_r_80per box_Active_3">
+                  <div className="anim position-absolute t_434_r_80per box_Active_3">
                     <div className="d-flex align-items-center justify-content-between">
                       <p className="m-0 fs_8 ff_Segoe fw-semibold ms-1">
                         Active leads
@@ -92,7 +92,7 @@ const Header = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className=" position-absolute t_20r_28per z_index_2">
+                  <div className="anim position-absolute t_20r_28per z_index_2">
                     <div className=" w_163px position-relative">
                       <img
                         className="position-absolute t_12per_l_5"
@@ -114,7 +114,7 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" position-absolute t_171_r_187">
+                  <div className="anim position-absolute t_171_r_187">
                     <div className="bg-white cierathonas_widdth px-3 py-3 rounded-3">
                       <div className="d-flex justify-content-between border_ccc">
                         <div className="d-flex align-items-start">
@@ -192,7 +192,7 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" position-absolute t_256_r_167">
+                  <div className="anim position-absolute t_256_r_167">
                     <div className="bg-white aveen_div">
                       <div className="p-2">
                         <p className=" ff_Segoe fw-normal fs_8 mb-1">

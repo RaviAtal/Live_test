@@ -427,6 +427,18 @@
   gap: 10px;
   display: flex;
 }
+.anim {
+  animation: anim_rotat;
+  animation-duration: 4s;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+@keyframes anim_rotat {
+  50% {
+    transform: translate(15px);
+  }
+}
 
 @media (min-width: 375px) {
   .mt_38 {
