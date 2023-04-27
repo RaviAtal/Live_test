@@ -18,6 +18,7 @@ const Header = () => {
               {/* imgggg*/}
               <div className="col-md-6 position-relative">
                 <div className="h-100">
+                  {/*     Jordan Wentworth              */}
                   <div className=" anim position-absolute t_110r_65per box_Contacted box_shado_md_lg p-3">
                     <div className="d-flex">
                       <h6 className="m-0 ff_Segoe fs_14 fw-semibold">
@@ -40,7 +41,8 @@ const Header = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="anim position-absolute t_40_l65per box_Contacted_2 p-3 ">
+                  {/* Mihail Lacusta*/}
+                  <div className="anim_mihail position-absolute t_40_l65per box_Contacted_2 p-3 ">
                     <div className="d-flex justify-content-end align-items-center gap-1">
                       <svg
                         width="13"
@@ -72,7 +74,7 @@ const Header = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="anim position-absolute t_434_r_80per box_Active_3">
+                  <div className="anim_try position-absolute t_434_r_80per box_Active_3">
                     <div className="d-flex align-items-center justify-content-between">
                       <p className="m-0 fs_8 ff_Segoe fw-semibold ms-1">
                         Active leads
@@ -92,29 +94,31 @@ const Header = () => {
                       </svg>
                     </div>
                   </div>
-                  <div className="anim position-absolute t_20r_28per z_index_2">
+                  {/* arrow+2box */}
+                  <div className="position-absolute t_20r_28per z_index_2 anim">
                     <div className=" w_163px position-relative">
                       <img
-                        className="position-absolute t_12per_l_5"
+                        className="position-absolute t_12per_l_5 anim_arrows"
                         src={top_arrow}
                         alt="top_arrow"
                       />
                       <img
-                        className=" position-absolute t_12per_r_5"
+                        className=" position-absolute t_12per_r_5 anim_arrows"
                         src={bottom_arrow}
                         alt="bottom_arrow"
                       />
-                      <div className=" box_flot m-auto">
+                      <div className=" box_flot m-auto ">
                         <div className="black_line"></div>
                         <div className="grey_line"></div>
                       </div>
-                      <div className=" box_flot mt-3 m-auto">
+                      <div className=" box_flot mt-3 m-auto anim_arrows">
                         <div className="grey_line"></div>
                         <div className="black_line"></div>
                       </div>
                     </div>
                   </div>
-                  <div className="anim position-absolute t_171_r_187">
+                  {/* Ciera Thomas*/}
+                  <div className="anim_ciera position-absolute t_171_r_187">
                     <div className="bg-white cierathonas_widdth px-3 py-3 rounded-3">
                       <div className="d-flex justify-content-between border_ccc">
                         <div className="d-flex align-items-start">
@@ -192,7 +196,8 @@ const Header = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="anim position-absolute t_256_r_167">
+                  {/* Ciera Thomas bottom card*/}
+                  <div className="anim_bottom_card position-absolute t_256_r_167">
                     <div className="bg-white aveen_div">
                       <div className="p-2">
                         <p className=" ff_Segoe fw-normal fs_8 mb-1">
@@ -272,7 +277,7 @@ const Header = () => {
                   <h1 className=" ff_Segoe fw-semibold fs_55 m-0">
                     Grow your business with Event-Driven Predictive Analytics
                   </h1>
-                  <p className=" m-0 ff_Segoe fw-normal fs_16 opacity-75 pt_15 col-sm-10 pr_6">
+                  <p className=" m-0 ff_Segoe fw-normal fs_16 opacity-75 pt_15 col-lg-11">
                     It is a long established fact that a reader will be
                     distracted by the using Lorem Ipsum is that it has a
                     more-or-less normal distribution of letters, as opposed to

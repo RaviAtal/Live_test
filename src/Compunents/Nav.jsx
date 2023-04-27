@@ -42,7 +42,7 @@ const Nav = () => {
             <div className=" d-none d-lg-flex align-items-center gap-4">
               <a
                 href="/sign_up"
-                className="fs_16 fw-semibold text_green sign_up_normal sign_up_green_border_hover py_20 px-3 rounded-1 text-nowrap"
+                className="fs_16 fw-semibold text_green sign_up_normal sign_up_green_border_hover py_20 px-3 rounded-1 text-nowrap on_hover"
               >
                 Sign up
               </a>

@@ -133,6 +133,9 @@
 .on_hover:hover a {
   color: white !important;
 }
+.on_hover:hover {
+  color: white !important;
+}
 .on_hover:hover a svg path {
   fill: white !important;
 }
@@ -504,6 +507,44 @@
       transform: translate(15px);
     }
   }
+  .anim_try {
+    animation: rov;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rov {
+    55% {
+      transform: translate(10px, -10px);
+    }
+    60% {
+      transform: rotateY(50deg);
+    }
+    70% {
+      transform: rotatex(-50deg);
+    }
+  }
+  .anim_arrows {
+    animation: anim_arrows;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim_arrows {
+    40% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: rotateX(50deg);
+    }
+    60% {
+      transform: rotateY(-20deg);
+    }
+  }
   .anim_line {
     animation: anim_lineee;
     animation-duration: 4s;
@@ -513,7 +554,73 @@
   }
   @keyframes anim_lineee {
     50% {
-      transform: translateY(15px);
+      transform: translateX(15px);
+    }
+  }
+  /* mihail_animation */
+  .anim_mihail {
+    animation: anim_mihail;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim_mihail {
+    50% {
+      transform: translate(-10px);
+    }
+    60% {
+      transform: rotateY(50deg);
+    }
+    70% {
+      transform: rotatex(-50deg);
+    }
+    80% {
+      transform: translate(10px, -10px);
+    }
+  }
+  /* Ciera Thomas Animation*/
+  .anim_ciera {
+    animation: anim_ciera;
+    animation-duration: 8s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim_ciera {
+    50% {
+      transform: translate(10px);
+    }
+    60% {
+      transform: translate(20px, -20px);
+    }
+    70% {
+      transform: scale(0.5);
+    }
+    80% {
+      transform: skew(15deg);
+    }
+  }
+  /* Ciera Thomas Animation*/
+  .anim_bottom_card {
+    animation: anim_bottom_card;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+  @keyframes anim_bottom_card {
+    45% {
+      transform: translate(10px);
+    }
+    45% {
+      transform: skew(15deg);
+    }
+    75% {
+      transform: rotateX(50deg);
     }
   }
 }
