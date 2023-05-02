@@ -1,8 +1,38 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import footer_logo from "../assets/images/png/footer_logo.png";
 import line_footer from "../assets/images/png/Line _footer_img.png";
 
 const Footer = () => {
+  const myValue = {
+    fullname: "",
+    email: "",
+    textarea: "",
+    radial_one: "",
+  };
+  const [myformData, setMyformData] = useState(myValue);
+
+  const handleInput = (e) => {
+    const { name, value } = e.target;
+    setMyformData({ ...myformData, [name]: value });
+  };
+  const formSubmit = (e) => {
+    e.preventDefault();
+    setMyformData(myValue);
+    console.log(myformData);
+  };
+  const Top = () => {
+    document.documentElement.scrollTop = 0;
+  };
+  const [backTop, setbackTop] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (document.documentElement.scrollTop > 400) {
+        setbackTop(true);
+      } else {
+        setbackTop(false);
+      }
+    });
+  });
   return (
     <>
       <footer className="bg_footer position-relative">
@@ -10,58 +40,64 @@ const Footer = () => {
           <div className="container_cus py-5 ">
             <div className="row justify-content-between">
               <div className="col-lg-7 mt-3 mt-lg-0">
-                <form className="row">
+                <form className="row" onSubmit={formSubmit}>
                   <div className=" mt-3 mt-md-0 col-lg-6">
                     <input
+                      required
                       className=" bg_blue_light w-100 ff_Segoe fw-semibold text-white opacity-75 border-0 py-2 px-2"
-                      // id="MyName"
-                      name="full  name"
-                      // onChange={handleInput}
-                      // value={myformData.fullname}
+                      id="MyName"
+                      name="fullname"
+                      onChange={handleInput}
+                      value={myformData.fullname}
                       type="text"
                       placeholder="Name"
                     />
                     <input
+                      required
                       className=" bg_blue_light w-100 ff_Segoe fw-semibold text-white opacity-75 border-0 py-2 px-2 mt-2"
                       id="email"
                       name="email"
-                      // onChange={handleInput}
-                      // value={myformData.fullname}
+                      onChange={handleInput}
+                      value={myformData.email}
                       type="email"
                       placeholder="Email"
                     />
                     {/* radio */}
                     <div className="d-flex mt-2">
-                      <div className=" text-nowrap col-6 border_2_green py-2 radio_force">
+                      <div className=" text-nowrap col-6 border_2_white py-2 radio_force">
                         <input
+                          required
                           className=" bg_blue_light ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-1"
-                          id="Financial Services"
-                          name="Financial Services"
-                          // onChange={handleInput}
-                          // value={myformData.fullname}
-                          type="radio"
+                          id="option1"
+                          name="radial_one"
+                          onChange={handleInput}
                           value="Financial Services"
+                          type="radio"
+                          checked={
+                            myformData.radial_one === "Financial Services"
+                          }
                         />
                         <label
-                          className="ms-1 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap"
+                          className="ms-1 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap on_force_green text-nowrap"
                           for="Financial Services"
                         >
                           Financial Services
                         </label>
                       </div>
                       <div className=" text-nowrap col-6">
-                        <div className="border_2_green py-2 ms-2 text-center radio_force">
+                        <div className="border_2_white py-2 ms-2 text-center radio_force">
                           <input
-                            className=" bg_blue_light ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-2"
-                            id="Real Estate"
-                            name="Real Estate"
-                            // onChange={handleInput}
-                            // value={myformData.fullname}
-                            type="radio"
+                            required
+                            className=" bg_blue_light ff_Segoe fw-semibold text-white opacity-75 rounded-5 py-2 px-2 ms-2 on_focus_bg_green"
+                            id="option2"
+                            name="radial_one"
+                            onChange={handleInput}
                             value="Real Estate"
+                            type="radio"
+                            checked={myformData.radial_one === "Real Estate"}
                           />
                           <label
-                            className="ms-2 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap "
+                            className="ms-2 ff_Segoe fw-semibold fs_16 text-white opacity-75 text-nowrap on_force_green"
                             for="Real Estate"
                           >
                             Real Estate
@@ -70,20 +106,23 @@ const Footer = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" mt-3 mt-md-0 col-lg-6 ">
+                  {/* gcgcg */}
+                  <div className=" mt-3 mt-md-0 col-lg-6 ps-0">
                     <textarea
                       placeholder="Message.."
                       cols="35"
                       rows="3"
+                      onChange={handleInput}
+                      value={myformData.textarea}
+                      name="textarea"
                       className="bg_blue_light border-0 p-2 ff_Segoe fw-semibold text-white opacity-75 w-100"
-                    ></textarea>{" "}
+                    ></textarea>
                     <button type="submit" className="submit_btn w-100">
                       submit
                     </button>
                   </div>
                 </form>
               </div>
-              {/* ghfgh */}
               <div className="col-lg-4 mt-3 mt-lg-0">
                 <h5 className=" ff_Segoe fs_40 fw-semibold text-white m-0">
                   Contact us
@@ -184,13 +223,19 @@ const Footer = () => {
                 </li>
               </div>
             </div>
-            <a href="#">
-              <img
-                className="position-absolute pos_line z_index_2 d-none d-lg-flex anim_line"
-                src={line_footer}
-                alt="line_footer"
-              />
-            </a>
+            {/* dssdfdfs bavk to top */}
+
+            <img
+              onClick={() => Top()}
+              className={
+                backTop
+                  ? "position-absolute pos_line z_index_2 d-none d-lg-flex anim_line cursor_pointer"
+                  : "d-none"
+              }
+              src={line_footer}
+              alt="line_footer"
+            />
+
             <div className="row mt-5">
               <div className="col-md-6 mt-3 mt-lg-0 col-lg-4">
                 <a

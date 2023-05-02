@@ -14,7 +14,7 @@ const Nav = () => {
   return (
     <>
       <nav className="m-3 bg-white z_index_2">
-        <div className="container_cus pt_34 pb_35 ">
+        <div className="container_cus py_22">
           <div className="d-flex align-items-center justify-content-between">
             <div className=" d-flex align-items-center ">
               <a href="/">
